@@ -24,7 +24,7 @@ const ProjectDescription = (props: Props) => {
         </h3>
         <p className="text-justify mx-3 lg:mx-60">{props.description}</p>
         <div className="flex justify-around gap-4">
-          <div className="relative hidden md:w-96 md:h-96 md:block">
+          <div className="relative hidden md:w-1/2 md:h-96 md:block m-3">
             <Image
               src={props.image1}
               alt="foto do mario"
@@ -33,13 +33,13 @@ const ProjectDescription = (props: Props) => {
               sizes="(max-width: 768px) 64px, 96px"
             />
           </div>
-          <div className="relative w-80 h-80 md:w-96 md:h-96">
+          <div className="relative w-80 h-80 md:w-1/2 md:h-96 m-3">
             <Image
               src={props.image2}
               alt="foto do mario"
               fill
               className="object-contain"
-              sizes="(max-width: 768px) 64px, 96px"
+              sizes="(max-width: 768px) 320px, 320px"
             />
           </div>
         </div>

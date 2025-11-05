@@ -7,11 +7,16 @@ import Skills from "@/components/portfolio/skills";
 import ProjectDescription from "@/components/projects/project-description";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Head from "next/head";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="bg-gray-400 m-0">
+      <Head>
+        <title>Meu Site</title>
+        <link rel="icon" href="/foto.png" type="image/png" />
+      </Head>
       <Header />
       <Card className="mx-3 bg-gray-500">
         <CardContent id="about">
@@ -65,6 +70,26 @@ export default function Home() {
               githubUrl="https://github.com/Mariomalaquias/twitter-frontend"
               projectUrl="https://github.com/Mariomalaquias/twitter-frontend"
             />
+            <ProjectDescription
+              title={"Projeto App-Clima"}
+              description={
+                "Este projeto é uma aplicação web que exibe dados climáticos em tempo real. Ao pesquisar por uma cidade, o usuário obtém informações meteorológicas atualizadas, consultadas diretamente da API OpenWeatherMap. O desenvolvimento foi feito com HTML, CSS e JavaScript."
+              }
+              image1={"/tela clima 1.jpg"}
+              image2={"/tela clima 2.jpg"}
+              githubUrl="https://github.com/Mariomalaquias/clima-app"
+              projectUrl="https://mariomalaquias.github.io/clima-app/"
+            />
+            <ProjectDescription
+              title={"Projeto Jogo da Memória"}
+              description={
+                "Este projeto é um Jogo da Memória interativo, construído inteiramente com Next.js (React). O aplicativo foi desenvolvido como projeto prático durante o curso da B7Web, aplicando diretamente os conceitos e técnicas modernas de desenvolvimento web ensinados na formação."
+              }
+              image1={"/jogoMemoria1.jpg"}
+              image2={"/jogoMemoria3.jpg"}
+              githubUrl="https://github.com/Mariomalaquias/jogo_memoria"
+              projectUrl="https://github.com/Mariomalaquias/jogo_memoria"
+            />
           </section>
         </CardContent>
         <section id="skills">
@@ -82,9 +107,31 @@ export default function Home() {
         </section>
         <section id="contact">
           <h2 className="text-center text-xl font-semibold">Contato</h2>
+          <div className="flex justify-center mt-3">
+            <Button variant={"link"} className="text-xl">
+              {" "}
+              <Image
+                src="/github.svg"
+                alt="logo do github"
+                width={30}
+                height={30}
+              />{" "}
+              Github
+            </Button>
+            <Button variant={"link"} className="text-xl">
+              {" "}
+              <Image
+                src="/linkedin.svg"
+                alt="logo do linkedin"
+                width={30}
+                height={30}
+              />{" "}
+              linkedin
+            </Button>
+          </div>
         </section>
       </Card>
-      <Card>
+      <Card className="mx-3">
         <Footer />
       </Card>
     </div>
