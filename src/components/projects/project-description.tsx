@@ -22,20 +22,26 @@ const ProjectDescription = (props: Props) => {
         <h3 className="text-center text-xl font-semibold">
           Descrição do projeto
         </h3>
-        <p className="m-3 text-center">{props.description}</p>
-        <div className="flex justify-around ">
-          <Image
-            src={props.image1}
-            alt="foto do mario"
-            width={500}
-            height={400}
-          />
-          <Image
-            src={props.image2}
-            alt="foto do mario"
-            width={500}
-            height={400}
-          />
+        <p className="text-justify mx-3 lg:mx-60">{props.description}</p>
+        <div className="flex justify-around gap-4">
+          <div className="relative hidden md:w-96 md:h-96 md:block">
+            <Image
+              src={props.image1}
+              alt="foto do mario"
+              fill
+              className="object-contain"
+              sizes="(max-width: 768px) 64px, 96px"
+            />
+          </div>
+          <div className="relative w-80 h-80 md:w-96 md:h-96">
+            <Image
+              src={props.image2}
+              alt="foto do mario"
+              fill
+              className="object-contain"
+              sizes="(max-width: 768px) 64px, 96px"
+            />
+          </div>
         </div>
         <div className="flex justify-center gap-4 p-4">
           <ProjectLinkButton href={props.githubUrl}>

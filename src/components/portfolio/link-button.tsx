@@ -14,7 +14,7 @@ type Props = {
  */
 const ProjectLinkButton = ({ href, children }: Props) => {
   return (
-    <Button asChild>
+    <Button className="h-7 px-2 text-xs md:h-10 md:text-sm" asChild>
       <Link href={href} target="_blank" rel="noopener noreferrer">
         {children}
       </Link>

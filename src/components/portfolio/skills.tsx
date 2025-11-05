@@ -8,7 +8,7 @@ const Skills = () => {
           Habilidades
         </h2>
         <ul>
-          <li className="flex items-center justify-center font-bold bg-gray-600 mx-3 rounded-full mx-60 mt-2 p-1">
+          <li className="flex items-center justify-center font-bold bg-gray-600 mx-6 rounded-full md:mx-60 mt-2 p-1">
             <Image
               src="/html5.svg"
               alt="icone do programa"
@@ -17,7 +17,7 @@ const Skills = () => {
             />{" "}
             HTML5
           </li>
-          <li className="flex items-center justify-center font-bold bg-gray-600 mx-3 rounded-full mx-60 mt-2 p-1">
+          <li className="flex items-center justify-center font-bold bg-gray-600 mx-6 rounded-full md:mx-60 mt-2 p-1">
             <Image
               src="/css3.svg"
               alt="icone do programa"
@@ -26,7 +26,7 @@ const Skills = () => {
             />{" "}
             CSS3
           </li>
-          <li className="flex items-center justify-center font-bold bg-gray-600 mx-3 rounded-full mx-60 mt-2 p-1">
+          <li className="flex items-center justify-center font-bold bg-gray-600 mx-6 rounded-full md:mx-60 mt-2 p-1">
             <Image
               src="/javascript.svg"
               alt="icone do programa"
@@ -35,7 +35,7 @@ const Skills = () => {
             />
             JavaScript
           </li>
-          <li className="flex items-center justify-center font-bold bg-gray-600 mx-3 rounded-full mx-60 mt-2 p-1">
+          <li className="flex items-center justify-center font-bold bg-gray-600 mx-6 rounded-full md:mx-60 mt-2 p-1">
             <Image
               src="/typescript.svg"
               alt="icone do programa"
@@ -44,7 +44,7 @@ const Skills = () => {
             />
             TypeScript
           </li>
-          <li className="flex items-center justify-center font-bold bg-gray-600 mx-3 rounded-full mx-60 mt-2 p-1">
+          <li className="flex items-center justify-center font-bold bg-gray-600 mx-6 rounded-full md:mx-60 mt-2 p-1">
             <Image
               src="/react.svg"
               alt="icone do programa"
@@ -53,7 +53,7 @@ const Skills = () => {
             />
             React
           </li>
-          <li className="flex items-center justify-center font-bold bg-gray-600 mx-3 rounded-full mx-60 mt-2 p-1">
+          <li className="flex items-center justify-center font-bold bg-gray-600 mx-6 rounded-full md:mx-60 mt-2 p-1">
             <Image
               src="/github.svg"
               alt="icone do programa"
@@ -62,7 +62,7 @@ const Skills = () => {
             />
             Github
           </li>
-          <li className="flex items-center justify-center font-bold bg-gray-600 mx-3 rounded-full mx-60 mt-2 p-1">
+          <li className="flex items-center justify-center font-bold bg-gray-600 mx-6 rounded-full md:mx-60 mt-2 p-1">
             <Image
               src="/tailwind.svg"
               alt="icone do programa"
@@ -71,7 +71,7 @@ const Skills = () => {
             />
             Tailwind
           </li>
-          <li className="flex items-center justify-center font-bold bg-gray-600 mx-3 rounded-full mx-60 mt-2 p-1">
+          <li className="flex items-center justify-center font-bold bg-gray-600 mx-6 rounded-full md:mx-60 mt-2 p-1">
             <Image
               src="/node.svg"
               alt="icone do programa"

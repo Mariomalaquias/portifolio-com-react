@@ -3,9 +3,6 @@ import WritingsOfExperience from "./writings-of-experience";
 const Experience = () => {
   return (
     <div>
-      <h2 className="text-center text-2xl font-bold ">
-        Experiência Profissional
-      </h2>
       <WritingsOfExperience
         subtitle={"Autônomo | Fevereiro de 2014 – Outubro de 2015"}
         text="Desenvolvimento de sites personalizados, utilizando abordagens
