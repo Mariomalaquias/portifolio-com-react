@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -130,9 +131,25 @@ export default function Home() {
             </Button>
           </div>
         </section>
-      </Card>
-      <Card className="mx-3">
-        <Footer />
+        <section className="bg-amber-400 border-2 rounded-xl m-3">
+          <h2 className="text-white text-center text-4xl drop-shadow-[2px_2px_0_#000]">
+            Jogos e Aplicativos
+          </h2>
+          <div className="border-2 rounded-xl m-3 bg-amber-500">
+            <Link href={"/games/amigo-secreto"}>
+              <Image
+                className="border-2 border-red-500 rounded-xl m-3"
+                src={"/amigo-tela.png"}
+                width={220}
+                height={220}
+                alt="imagem do app amigo secreto"
+              />
+            </Link>
+          </div>
+        </section>
+        <section>
+          <Footer />
+        </section>
       </Card>
     </div>
   );

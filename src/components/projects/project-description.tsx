@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { Card } from "../ui/card";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import { Button } from "../ui/button";
-import { useState } from "react";
 import ProjectLinkButton from "../portfolio/link-button";
 
 type Props = {
@@ -10,14 +8,14 @@ type Props = {
   description: string;
   image1: string | StaticImport;
   image2: string | StaticImport;
-  githubUrl: string; // 2. Adicione a URL do Github
-  projectUrl: string; // 3. Adicione a URL do projeto
+  githubUrl: string;
+  projectUrl: string;
 };
 
 const ProjectDescription = (props: Props) => {
   return (
     <>
-      <Card className="bg-gray-400 text-white">
+      <Card className="bg-gray-400 text-white mt-3">
         <h2 className="text-center text-2xl font-semibold">{props.title}</h2>
         <h3 className="text-center text-xl font-semibold">
           Descrição do projeto
@@ -30,10 +28,10 @@ const ProjectDescription = (props: Props) => {
               alt="foto do mario"
               fill
               className="object-contain"
-              sizes="(max-width: 768px) 64px, 96px"
+              sizes="(max-width: 768px) 320px, 320px"
             />
           </div>
-          <div className="relative w-80 h-80 md:w-1/2 md:h-96 m-3">
+          <div className="relative w-96 h-96 md:w-1/2 md:h-96 m-3">
             <Image
               src={props.image2}
               alt="foto do mario"
