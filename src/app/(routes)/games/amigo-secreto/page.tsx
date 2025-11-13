@@ -71,7 +71,7 @@ const AmigoSecreto = () => {
   };
 
   return (
-    <div className="w-screen h-screen bg-gray-600 flex items-center justify-center bg-[url(/amigo-secretoA.png)] bg-repeat">
+    <div className="w-screen h-screen flex items-center justify-center bg-[url(/amigo-secretoA.png)] bg-repeat">
       <Link href={"/"}>
         <Button className="absolute top-10 left-10 cursor-pointer hover:bg-green-600 transition duration-700 ease-in-out">
           Sair do Jogo

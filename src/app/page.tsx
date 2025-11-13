@@ -145,6 +145,9 @@ export default function Home() {
                 alt="imagem do app amigo secreto"
               />
             </Link>
+            <Link href={"/games/sorteador-de-numeros"}>
+              Sorteador de numeros
+            </Link>
           </div>
         </section>
         <section>

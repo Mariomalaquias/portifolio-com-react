@@ -12,8 +12,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "../ui/sheet";
-import { TextAlignCenterIcon } from "lucide-react";
-import { watch } from "fs";
+import { MenuIcon, TextAlignCenterIcon } from "lucide-react";
 
 const Header = () => {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
@@ -50,22 +49,25 @@ const Header = () => {
             </nav>
           </div>
 
-          <div className="md:hidden">
+          <div className=" md:hidden">
             <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
               <SheetTrigger asChild>
-                <Button variant="default" size="icon">
-                  <TextAlignCenterIcon />
+                <Button
+                  className="hover:bg-gray-800"
+                  variant="default"
+                  size="icon"
+                >
+                  <MenuIcon />
                 </Button>
               </SheetTrigger>
-              <SheetContent>
+              <SheetContent className="bg-gray-600">
                 <SheetHeader>
-                  <SheetTitle>Navegação</SheetTitle>
+                  <SheetTitle className="text-3xl">Navegação</SheetTitle>
                 </SheetHeader>
 
                 <div className="grid flex-1 auto-rows-min gap-6 px-4">
                   <nav>
-                    <ul className="flex flex-col gap-3">
-                      {" "}
+                    <ul className="flex flex-col gap-3 text-center text-2xl font-semibold mt-12">
                       <li>
                         <Link
                           href="#about"
