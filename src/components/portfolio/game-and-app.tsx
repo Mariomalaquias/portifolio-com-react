@@ -12,10 +12,12 @@ const GameAndApp = (props: Props) => {
   return (
     <>
       <Link href={props.link}>
-        <div>
-          <h2 className="text-white font-bold text-center">{props.name}</h2>
+        <div className="m-4">
+          <h2 className="text-white font-bold text-center mt-4">
+            {props.name}
+          </h2>
           <Image
-            className="border-2 border-red-500 rounded-xl m-3"
+            className="border-2 border-red-500 rounded-xl mx-auto"
             src={props.image}
             width={220}
             height={220}

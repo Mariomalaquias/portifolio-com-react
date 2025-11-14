@@ -8,6 +8,9 @@ import Skills from "@/components/portfolio/skills";
 import ProjectDescription from "@/components/projects/project-description";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -105,6 +108,7 @@ export default function Home() {
           <h2 className="text-center text-xl font-semibold">Educação</h2>
           <Education />
         </section>
+
         <section id="contact">
           <h2 className="text-center text-xl font-semibold">Contato</h2>
           <div className="flex justify-center mt-3">
@@ -129,12 +133,55 @@ export default function Home() {
               linkedin
             </Button>
           </div>
+
+          <form
+            action="https://formspree.io/f/mldajgba"
+            method="POST"
+            className="max-w-md mx-auto mt-6 p-4 border rounded-lg shadow-sm"
+          >
+            <div className="space-y-4">
+              <div>
+                <Label htmlFor="name">Nome</Label>
+                <Input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  className="mt-1"
+                />
+              </div>
+
+              <div>
+                <Label htmlFor="email">Email</Label>
+                <Input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  className="mt-1"
+                />
+              </div>
+              <div>
+                <Label htmlFor="message">Mensagem</Label>
+                <Textarea
+                  id="message"
+                  name="message"
+                  required
+                  className="mt-1"
+                />
+              </div>
+              <Button type="submit" className="w-full">
+                Enviar Mensagem
+              </Button>
+            </div>
+          </form>
         </section>
+
         <section id="game" className="bg-amber-400 border-2 rounded-xl m-3">
           <h2 className="text-white text-center text-4xl drop-shadow-[2px_2px_0_#000]">
             Jogos e Aplicativos
           </h2>
-          <div className="flex border-2 rounded-xl m-3 bg-amber-500">
+          <div className="border-2 rounded-xl m-3 bg-amber-500 flex flex-col md:flex-row">
             <GameAndApp
               alt="imagem do jogo amigo secreto"
               image="/amigo-tela.png"
