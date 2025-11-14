@@ -9,7 +9,7 @@ type Props = {
   image1: string | StaticImport;
   image2: string | StaticImport;
   githubUrl: string;
-  projectUrl: string;
+  projectUrl?: string;
 };
 
 const ProjectDescription = (props: Props) => {
@@ -34,7 +34,7 @@ const ProjectDescription = (props: Props) => {
           <div className="relative w-96 h-96 md:w-1/2 md:h-96 m-3">
             <Image
               src={props.image2}
-              alt="foto do mario"
+              alt="Imagem do projeto"
               fill
               className="object-contain"
               sizes="(max-width: 768px) 320px, 320px"
@@ -45,9 +45,11 @@ const ProjectDescription = (props: Props) => {
           <ProjectLinkButton href={props.githubUrl}>
             Ver no Github
           </ProjectLinkButton>
-          <ProjectLinkButton href={props.projectUrl}>
-            Abrir Projeto
-          </ProjectLinkButton>
+          {props.projectUrl && (
+            <ProjectLinkButton href={props.projectUrl}>
+              Abrir Projeto
+            </ProjectLinkButton>
+          )}
         </div>
       </Card>
     </>

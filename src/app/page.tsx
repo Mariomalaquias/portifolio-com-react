@@ -1,6 +1,7 @@
 import Education from "@/components/portfolio/education";
 import Experience from "@/components/portfolio/experience";
 import Footer from "@/components/portfolio/footer";
+import GameAndApp from "@/components/portfolio/game-and-app";
 import Header from "@/components/portfolio/header";
 import ProjectLinkButton from "@/components/portfolio/link-button";
 import Skills from "@/components/portfolio/skills";
@@ -69,7 +70,6 @@ export default function Home() {
               image1={"/imagemTwitter2.jpg"}
               image2={"/imagemTwitter3.jpg"}
               githubUrl="https://github.com/Mariomalaquias/twitter-frontend"
-              projectUrl="https://github.com/Mariomalaquias/twitter-frontend"
             />
             <ProjectDescription
               title={"Projeto App-Clima"}
@@ -89,7 +89,6 @@ export default function Home() {
               image1={"/jogoMemoria1.jpg"}
               image2={"/jogoMemoria3.jpg"}
               githubUrl="https://github.com/Mariomalaquias/jogo_memoria"
-              projectUrl="https://github.com/Mariomalaquias/jogo_memoria"
             />
           </section>
         </CardContent>
@@ -131,25 +130,29 @@ export default function Home() {
             </Button>
           </div>
         </section>
-        <section className="bg-amber-400 border-2 rounded-xl m-3">
+        <section id="game" className="bg-amber-400 border-2 rounded-xl m-3">
           <h2 className="text-white text-center text-4xl drop-shadow-[2px_2px_0_#000]">
             Jogos e Aplicativos
           </h2>
-          <div className="border-2 rounded-xl m-3 bg-amber-500">
-            <Link href={"/games/amigo-secreto"}>
-              <h2>Amigo Secreto</h2>
-              <Image
-                className="border-2 border-red-500 rounded-xl m-3"
-                src={"/amigo-tela.png"}
-                width={220}
-                height={220}
-                alt="imagem do app amigo secreto"
-              />
-            </Link>
-            <Link href={"/games/sorteador-de-numeros"}>
-              Sorteador de numeros
-            </Link>
-            <Link href={"/games/pomodoro"}>Pomodoro</Link>
+          <div className="flex border-2 rounded-xl m-3 bg-amber-500">
+            <GameAndApp
+              alt="imagem do jogo amigo secreto"
+              image="/amigo-tela.png"
+              name="Amigo Secreto"
+              link="/games/amigo-secreto"
+            />
+            <GameAndApp
+              alt="imagem do App pomodoro"
+              image="/pomo.png"
+              name="Pomodoro"
+              link="/games/pomodoro"
+            />
+            <GameAndApp
+              alt="imagem do App pomodoro"
+              image="/sort.png"
+              name="Sorteador de numeros"
+              link="/games/sorteador-de-numeros"
+            />
           </div>
         </section>
         <section>

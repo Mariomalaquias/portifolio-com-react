@@ -45,6 +45,9 @@ const Header = () => {
                 <li>
                   <Link href="#contact">Contato</Link>
                 </li>
+                <li>
+                  <Link href="#game">Jogos e App</Link>
+                </li>
               </ul>
             </nav>
           </div>

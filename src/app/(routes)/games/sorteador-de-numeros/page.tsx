@@ -20,9 +20,9 @@ const NumberGenerator = () => {
         </Button>
       </Link>
 
-      <Card className="bg-green-300 text-green-900">
+      <Card className="bg-green-700 text-green-50">
         <CardHeader>
-          <CardTitle className="text-center text-2xl font-bold text-green-900">
+          <CardTitle className="text-center text-2xl font-bold text-green-50">
             Sorteador de números
           </CardTitle>
         </CardHeader>
@@ -57,10 +57,10 @@ const NumberGenerator = () => {
             </div>
           </div>
           <div className="flex gap-4 justify-evenly mt-4">
-            <Button className="cursor-pointer hover:bg-green-600 transition duration-700 ease-in-out bg-green-700">
+            <Button className="cursor-pointer hover:bg-green-600 transition duration-700 ease-in-out bg-green-500">
               Sortear
             </Button>
-            <Button className="cursor-pointer hover:bg-green-600 transition duration-700 ease-in-out bg-green-700">
+            <Button className="cursor-pointer hover:bg-green-600 transition duration-700 ease-in-out bg-green-500">
               Reiniciar
             </Button>
           </div>

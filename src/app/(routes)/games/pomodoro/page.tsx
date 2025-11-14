@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 
 import { FiClock, FiMoon, FiPlay, FiPause, FiPlus, FiX } from "react-icons/fi";
 import { GiTomato } from "react-icons/gi";
+import Link from "next/link";
 
 const POMODORO_TIME = 25 * 60; // 25 minutos
 const SHORT_BREAK_TIME = 5 * 60; // 5 minutos
@@ -134,6 +135,11 @@ export default function PomodoroTimer() {
         style={{ fontFamily: "var(--font-roboto)" }}
       >
         <CardContent className="p-6 md:p-12 flex flex-col lg:flex-row lg:justify-center items-center lg:items-start gap-12">
+          <Link href={"/"}>
+            <Button className="absolute top-10 left-10 cursor-pointer hover:bg-blue-900 transition duration-700 ease-in-out bg-blue-950">
+              Sair do Jogo
+            </Button>
+          </Link>
           <div className="flex flex-row flex-wrap justify-center lg:flex-col gap-4 w-full lg:w-auto">
             <Button
               className={`flex items-center gap-3 px-6 py-4 rounded-lg cursor-pointer transition-all duration-300 ease-in-out text-base font-medium min-w-[180px]
