@@ -49,7 +49,7 @@ const Header = () => {
             </nav>
           </div>
 
-          <div className=" md:hidden">
+          {/* <div className=" md:hidden">
             <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
               <SheetTrigger asChild>
                 <Button
@@ -122,7 +122,7 @@ const Header = () => {
                 <SheetFooter></SheetFooter>
               </SheetContent>
             </Sheet>
-          </div>
+          </div> */}
         </CardHeader>
       </Card>
     </>

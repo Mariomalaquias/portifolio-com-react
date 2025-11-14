@@ -137,6 +137,7 @@ export default function Home() {
           </h2>
           <div className="border-2 rounded-xl m-3 bg-amber-500">
             <Link href={"/games/amigo-secreto"}>
+              <h2>Amigo Secreto</h2>
               <Image
                 className="border-2 border-red-500 rounded-xl m-3"
                 src={"/amigo-tela.png"}
@@ -148,6 +149,7 @@ export default function Home() {
             <Link href={"/games/sorteador-de-numeros"}>
               Sorteador de numeros
             </Link>
+            <Link href={"/games/pomodoro"}>Pomodoro</Link>
           </div>
         </section>
         <section>
