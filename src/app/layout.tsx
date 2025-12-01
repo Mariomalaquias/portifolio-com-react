@@ -4,6 +4,7 @@ import "./globals.css";
 import Head from "next/head";
 import "./globals.css"; // Mantenha seu arquivo global.css para as diretivas do Tailwind
 import { Inter, Orbitron, Roboto } from "next/font/google";
+import { FloatingWhatsAppButton } from "@/components/portfolio/FloatingWhatsAppButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,6 +43,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${orbitron.variable} ${roboto.variable} antialiased`}
       >
         {children}
+        <FloatingWhatsAppButton />
       </body>
     </html>
   );

@@ -113,24 +113,52 @@ export default function Home() {
           <h2 className="text-center text-xl font-semibold">Contato</h2>
           <div className="flex justify-center mt-3">
             <Button variant={"link"} className="text-xl">
-              {" "}
-              <Image
-                src="/github.svg"
-                alt="logo do github"
-                width={30}
-                height={30}
-              />{" "}
-              Github
+              <a
+                href="https://github.com/marioluizmalaquias"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-1"
+              >
+                <Image
+                  src="/github.svg"
+                  alt="logo do github"
+                  width={30}
+                  height={30}
+                />
+                Github
+              </a>
             </Button>
             <Button variant={"link"} className="text-xl">
-              {" "}
-              <Image
-                src="/linkedin.svg"
-                alt="logo do linkedin"
-                width={30}
-                height={30}
-              />{" "}
-              linkedin
+              <a
+                href="https://www.linkedin.com/in/mario-malaquias-4b3a1b52/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-1"
+              >
+                <Image
+                  src="/linkedin.svg"
+                  alt="logo do linkedin"
+                  width={30}
+                  height={30}
+                />
+                linkedin
+              </a>
+            </Button>
+            <Button variant={"link"} className="text-xl">
+              <a
+                href="https://wa.me/5516991042008"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-1"
+              >
+                <Image
+                  src="/icons-whatsapp.svg"
+                  alt="logo do linkedin"
+                  width={30}
+                  height={30}
+                />
+                whatsapp
+              </a>
             </Button>
           </div>
 
@@ -199,6 +227,12 @@ export default function Home() {
               image="/sort.png"
               name="Sorteador de numeros"
               link="/games/sorteador-de-numeros"
+            />
+            <GameAndApp
+              alt="imagem do App pomodoro"
+              image="/sort.png"
+              name="Jogo da memoria"
+              link="/games/jogo-da-memoria"
             />
           </div>
         </section>
